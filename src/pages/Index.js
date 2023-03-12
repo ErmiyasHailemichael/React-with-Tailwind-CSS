@@ -35,6 +35,12 @@ export default function Index({blogs, cretaeBlogs}) {
         return str.split(' ').length;
     }
 
+    const timeToRead = (str) => {
+        const wordsPerMinute = 200;
+        const words = wordCount(str);
+        return Math.ceil(words / wordsPerMinute);
+      }
+
     const loaded = () => 
     blogs.map((blog) => (
       <>
