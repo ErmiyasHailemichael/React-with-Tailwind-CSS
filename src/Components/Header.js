@@ -5,9 +5,7 @@ function Header() {
   return (
     <nav>
         <Link to='/'>
-            <div>
-
-            </div>
+            <div></div>
         </Link>
     </nav>
   )
