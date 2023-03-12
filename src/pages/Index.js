@@ -1,47 +1,49 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-export default function Index({blogs, cretaeBlogs}) {
-    const [form, setForm] = useState({
-        title: '', 
-        body: '',
-        author: '',
+export default function Index({blogs, createBlogs}) { // publish page
+  const [form, setForm] = useState({
+    title: '',
+    body: '',
+    author: '',  
+  });
+
+  const handleChange = (e) => {  // publish page
+    setForm((prevState) => {
+      return {
+        ...prevState,
+        [e.target.name]: e.target.value,
+      };
     });
+  }
 
-    const handleChange = (e) => {
-        setForm((prevState) => {
-            return {
-                ...prevState,
-                [e.target.name]: e.target.value,
-            };
-        });
-        };
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        createBlog(form);
-        setForm({
-            title: '',
-            body: '',
-            author: '',
-        });
-    };
+  const handleSubmit = (e) => { // publish page
+    e.preventDefault();
+    createBlogs(form);
+    setForm({
+      title: '',
+      body: '',
+      author: ''
+    });
+  };
 
-    const reading = (str, num) =>{
-        return str.length > num ? str.slice(0, num) + '...' : str;
-    }
+  const reading = (str, num) => {
+    return str?.length > num ? str.slice(0, num) + '...' : str;
+  }
 
-    const worldCount = (str) => {
-        return str.split(' ').length;
-    }
+  const wordCount = (str) => {
+    return str?.split(' ').length;
+  }
 
-    const timeToRead = (str) => {
-        const wordsPerMinute = 200;
-        const words = wordCount(str);
-        return Math.ceil(words / wordsPerMinute);
-      }
+  const timeToRead = (str) => {
+    const wordsPerMinute = 200;
+    const words = wordCount(str);
+    return Math.ceil(words / wordsPerMinute);
+  }
 
-    const loaded = () => 
+
+  const loaded = () => 
     blogs.map((blog) => (
       <>
       {console.log(blog?.id)}
