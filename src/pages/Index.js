@@ -9,24 +9,7 @@ export default function Index({blogs, createBlogs}) { // publish page
     author: '',  
   });
 
-  const handleChange = (e) => {  // publish page
-    setForm((prevState) => {
-      return {
-        ...prevState,
-        [e.target.name]: e.target.value,
-      };
-    });
-  }
-
-  const handleSubmit = (e) => { // publish page
-    e.preventDefault();
-    createBlogs(form);
-    setForm({
-      title: '',
-      body: '',
-      author: ''
-    });
-  };
+  
 
   const reading = (str, num) => {
     return str?.length > num ? str.slice(0, num) + '...' : str;
@@ -47,7 +30,7 @@ export default function Index({blogs, createBlogs}) { // publish page
     blogs.map((blog) => (
       <>
       {console.log(blog?.id)}
-      <div key={blog.id} className='card'>
+      <div key={blog._id} className='card'>
         <Link to={`/blog/${blog.id}`}>
           <h1>{blog.title}</h1>
         </Link>
@@ -67,33 +50,7 @@ export default function Index({blogs, createBlogs}) { // publish page
 
   return (
     <>
-    <section className='container'>
-      <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          name='title'
-          value={form.title}
-          onChange={handleChange}
-          placeholder='Title'
-        />
-        <input
-          type='text'
-          name='body'
-          value={form.body}
-          onChange={handleChange}
-          placeholder='Body'
-        />
-        <input
-          type='text'
-          name='author'
-          value={form.author}
-          onChange={handleChange}
-          placeholder='Author'
-        />
-        <input type='submit' value='Publish' />
-      </form>
-      
-    </section>
+    
       {blogs ? loaded() : loading()}
       </>
   );
