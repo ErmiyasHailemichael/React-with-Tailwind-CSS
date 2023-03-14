@@ -1,8 +1,36 @@
 # Capstone Project: Choose a New Technology
 
-# My Project 
-
-A simple React web application that can perform CRUD. The user can create, read, update, and delete.
 # React-with-Tailwind-CSS
 
-![Alt text](Readme/Blogging.png)
+A simple React web application that can perform CRUD. The user can create, read, update, and delete. It is styled with Tailwindcss. 
+
+# Planned 
+
+![Alt text](Readme/Web%2016:9.png)
+
+
+# Current
+
+![Alt text](Readme/current.png)
+
+
+# Live Link
+
+[Live Link](https://capstoneapp.netlify.app/)
+
+
+# Backend Repository
+
+[Backend](https://github.com/ErmiyasHailemichael/Capstone-Backend)
+<!-- https://final-jwwb.onrender.com/blogs/ -->
+
+# User Stories
+[Tello](https://trello.com/b/mmmQjiW2/blog)
+
+
+# Technology Used
+- Django
+- Postgres
+- React
+- Node
+
