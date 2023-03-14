@@ -61,7 +61,7 @@ export default function Show({blogs, updateBlogs, deleteBlogs}) {
           placeholder='Author'
         />
         <input 
-        className='bg-gray-500 hover:bg-black-600 text-white font-bold py-2 px-4 rounded-lg'
+        className='bg-gray-500  text-white font-bold py-2  rounded-lg'
         type='submit' 
         value='Update' />
       </form>
