@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex px-3 py-2 border rounded text-teal-200 hover:text-white hover:border-white"
+          className="flex px-3 border rounded text-teal-200 hover:text-white hover:border-white"
           type="button"
         >
             <title>Menu</title>
@@ -21,7 +21,7 @@ const Navbar = () => {
          
           <Link
             to="/write"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
             Write
           </Link>
