@@ -41,7 +41,7 @@ export default function Write({ createBlogs }) {
           value={form.title}
           onChange={handleChange}
           placeholder="Title"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
         />
         </div>
         <div className="mb-4">
@@ -54,7 +54,7 @@ export default function Write({ createBlogs }) {
           value={form.body}
           onChange={handleChange}
           placeholder="Body"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
         />
         </div>
         <div className="mb-4">
@@ -68,13 +68,24 @@ export default function Write({ createBlogs }) {
           value={form.author}
           onChange={handleChange}
           placeholder="Author"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
+          // shadow - add a shadow to the input
+          // appearance-none - remove the default browser styles
+          // border - add a border
+          // rounded - round the corners
+          // w-full - make the input full width
+          // py-2 - add some padding on the y-axis
+          // px-3 - add some padding on the x-axis
+          // text-gray-700 - make the text dark gray
+          // leading-tight - make the text a little tighter 
+          // focus:outline-none - remove the outline when the input is selected by the user
+          // focus:shadow-outline - add a shadow to the input when it is selected by the user
         />
         </div>
         <div className=" flex items-center justify-center">
 
         <input type="submit" value="Publish"
-        className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="bg-black hover:bg-gray-700 text-white  py-2 px-4 rounded "
         />
         </div>
       </form>
