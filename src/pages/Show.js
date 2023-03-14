@@ -27,13 +27,17 @@ export default function Show({blogs, updateBlogs, deleteBlogs}) {
   };
 
   return (
-    <div>
-      <h1>{blog.title}</h1>
-      <h3>{blog.author}</h3>
-      <p>{blog.body}</p>
-      <button id = 'Delete' onClick={removeBlog}>Delete</button>
-      <form onSubmit={handleUpdate}>
+    <div className='bg-white p-4 rounded-lg shadow-md'>
+      <h1 className='text-3xl font-bold mb-4'>{blog.title}</h1>
+      <h3 className='tetx-lg font-medium mb-2'>{blog.author}</h3>
+      <p className='text-gray-600 mb-4'>{blog.body}</p>
+      <button 
+      className='bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg mr-2'
+      onClick={removeBlog}>Delete</button>
+
+      <form onSubmit={handleUpdate} className="flex flex-col">
         <input
+        className='mb-2 p-2 rounded border border-gray-400'
           type='text'
           name='title'
           value={ediform.title}
@@ -41,6 +45,7 @@ export default function Show({blogs, updateBlogs, deleteBlogs}) {
           placeholder='Title'
         />
         <input
+        className='mb-2 p-6 rounded border border-gray-400'
           type='text'
           name='body'
           value={ediform.body}
@@ -48,13 +53,17 @@ export default function Show({blogs, updateBlogs, deleteBlogs}) {
           placeholder='Body'
         />
         <input
+        className='mb-2 p-2 rounded border border-gray-400'
           type='text'
           name='author'
           value={ediform.author}
           onChange={handleChange}
           placeholder='Author'
         />
-        <input type='submit' value='Update' />
+        <input 
+        className='bg-gray-500 hover:bg-black-600 text-white font-bold py-2 px-4 rounded-lg'
+        type='submit' 
+        value='Update' />
       </form>
     </div>
   );
