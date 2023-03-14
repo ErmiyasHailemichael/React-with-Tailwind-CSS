@@ -30,6 +30,7 @@ export default function Write({ createBlogs }) {
 
   return (
     <section className="container mx-auto p-4">
+      
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="mb-4">
           <lable htmlFor="title" className="block text-gray-700 font bold mb-2">
@@ -43,9 +44,11 @@ export default function Write({ createBlogs }) {
           placeholder="Title"
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
         />
+        
         </div>
         <div className="mb-4">
           <lable htmlFor="body" className="block text-gray-700 font bold mb-2">
+            
             Body
           </lable>
         <input
