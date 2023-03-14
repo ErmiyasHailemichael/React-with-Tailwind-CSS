@@ -12,7 +12,7 @@ A simple React web application that can perform CRUD. The user can create, read,
 # Current
 
 ![Alt text](Readme/current.png)
-
+![Alt text](Readme/show.png)
 
 # Live Link
 
