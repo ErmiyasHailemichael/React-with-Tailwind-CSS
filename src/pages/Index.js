@@ -30,7 +30,7 @@ export default function Index({blogs, createBlogs}) { // publish page
     blogs.map((blog) => (
       <>
       {console.log(blog?.id)}
-      <div key={blog._id} className='card'>
+      <div key={blog._id} className='max-w-xl mx-auto mt-10 bg-white rounded-xl shadow-md overflow-hidden'>
         <Link to={`/blog/${blog.id}`}>
           <h1>{blog.title}</h1>
         </Link>
