@@ -21,7 +21,7 @@ A simple React web application that can perform CRUD. The user can create, read,
 
 # Backend Repository
 
-[Backend](https://github.com/ErmiyasHailemichael/Capstone-Backend)
+[Backend](https://github.com/ErmiyasHailemichael/FinalPrjt)
 <!-- https://final-jwwb.onrender.com/blogs/ -->
 
 # User Stories
