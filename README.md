@@ -2,7 +2,7 @@
 
 # React-with-Tailwind-CSS
 
-A simple React web application that can perform CRUD. The user can create, read, update, and delete. It is styled with Tailwindcss. 
+A simple React web application that can perform CRUD. The user can create, read, update, and delete. It is styled with Tailwind css. 
 
 # Planned 
 
@@ -33,4 +33,5 @@ A simple React web application that can perform CRUD. The user can create, read,
 - Postgres
 - React
 - Node
+- Tailwind CSS
 
